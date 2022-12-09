@@ -1,11 +1,6 @@
 
-.technologies-i-know, .h3-text, .font-fam, .nav-principal, .form, .portfolio, .resume-text {
+.technologies-i-know, .font-fam, .nav-principal, .form, .portfolio, .resume-text {
     font-family: 'Signika Negative', monospace;
-    color: #424242;
-}
-
-.h2-text {
-    color: #1dbdad;
 }
 
 input {

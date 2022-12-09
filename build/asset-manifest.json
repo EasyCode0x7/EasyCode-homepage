@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.81849c69.css",
+    "main.js": "/static/js/main.b0387fa6.js",
+    "static/media/buymeacoffee.PNG": "/static/media/buymeacoffee.97c3a36db0bdd8cfc50b.PNG",
+    "static/media/dev-ed-wave.png": "/static/media/dev-ed-wave.96fe79664ed9e871bb6f.png",
+    "index.html": "/index.html",
+    "main.81849c69.css.map": "/static/css/main.81849c69.css.map",
+    "main.b0387fa6.js.map": "/static/js/main.b0387fa6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81849c69.css",
+    "static/js/main.b0387fa6.js"
+  ]
+}

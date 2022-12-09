@@ -1,5 +1,6 @@
 #bg {
-    width: 89%;
+    background-color: #282a36!important;
+    padding: 0 20px 0 20px;
 }
 
 :root {
@@ -8,16 +9,16 @@
     --youtube: #bd081c;
 }
 
-.portfolio, .h2-text {
+.portfolio, .wxTrs{
     font-family: Rubik;
 }
 
-.text-white{
-    color: rgb(255 255 255 / var(--tw-text-opacity));
+.h3-text{
+    font-family: 'vt323';
 }
 
-.uno {
-    height: 125px;
+.curs {
+    cursor: pointer;
 }
 
 .first-section {
@@ -25,17 +26,17 @@
 }
 
 .igual {
-    height: 35vh;
-    width: 50vh;
+    width: 40%;
+    height: 35%;
 }
 
 .contact {
-    width: 80%;
+    width: 60%;
 }
 
 .h2-text {
-    color: #0d9488;
-    font-weight: 500;
+    font-family: 'Press Start 2P';
+    padding-top: 100px;
 }
 
 .content {
@@ -44,14 +45,17 @@
 
 .resume-text {
     background-color: #1dbdad;
-    cursor: pointer;
 }
 
 .avatar {
-    background: linear-gradient(to bottom, aqua, #daffff, white);
+    background: linear-gradient(to bottom, aqua, #daffff, black);
     table-layout: fill;
-    height: 450px;
-    width: 450px;
+    height: 350px;
+    width: 350px;
+}
+.img-avatar{
+    height: 350px;
+    width: 370px;
 }
 
 .new {
@@ -63,26 +67,41 @@
     transform: rotate(10deg);
 }
 
+.twitter, .linkedin, .youtube{
+    cursor: pointer;
+}
+
+.identificator{
+    width: 25%;
+}
+
 .identificator .sobre, .blurr img{
     transition: .2;
 }
+
 .blurr:hover img, .identificator:hover .sobre{
     filter: blur(2px);
 }
+
 .blurr img:hover, .identificator .sobre:hover{
     transform: translateY(-3px) scale(1.05);
     filter: none;
 }
 
 .twitter, .linkedin, .youtube{
-    color: grey;
+    color: white;
+    opacity: .6;
 }
 .twitter:hover {
     color: var(--twitter);
+    opacity: 10;
 }
 .linkedin:hover {
+    opacity: 10;
     color: var(--linkedin);
 }
 .youtube:hover {
+    opacity: 10;
     color: var(--youtube);
 }
+
