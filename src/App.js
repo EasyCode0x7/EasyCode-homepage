@@ -1,22 +1,24 @@
-import ContactMe from './components/ContactMe';
 import ServicesIoffer from './components/ServicesIoffer';
 import Technologies from './components/Technologies';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Head from './components/Head';
+import "@fontsource/m-plus-rounded-1c";
+import React, { Component } from 'react';
+
 
 
 
 function App() {
 
     return (
-        <div className="App">
+        <div className="App bg-color container">
 
             <header>
                 <Header />
             </header>
 
-            <main id='bg' className='mx-auto bg-white px-10'>
+            <main id='bg' className='px-5'>
                 <section className='first-section'>
                     <Head />
                 </section>
@@ -29,16 +31,12 @@ function App() {
                     <ServicesIoffer />
                 </section>
 
-                <section className='contact font-fam py-5 mx-auto'>
-                    <ContactMe />
-                </section>
-
                 <footer>
                     <Footer />
                 </footer>
 
             </main>
-
+                   
         </div>
     );
   ;

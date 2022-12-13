@@ -1,11 +1,11 @@
-import React from "react";
 import buymeacoffee from '../images/buymeacoffee.PNG';
 import '../App.css';
 import '../stylesheet/styles.css';
+import React, { Component } from 'react';
+
 
 
 function ServicesIoffer() {
-
     return (
         
         <div className="text-white">
@@ -42,5 +42,4 @@ function ServicesIoffer() {
 
     )
 }
-
 export default ServicesIoffer;

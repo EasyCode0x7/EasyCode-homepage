@@ -1,4 +1,4 @@
-import React from "react";
+
 
 const LightTheme = {
     text: "#23374D",

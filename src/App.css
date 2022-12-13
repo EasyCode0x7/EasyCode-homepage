@@ -1,61 +1,73 @@
 #bg {
-    background-color: #282a36!important;
-    padding: 0 20px 0 20px;
+    font-family: var(--chakra-fonts-heading);
+    color: rgba(255, 255, 255, 0.92);;
+    --chakra-fonts-heading: 'M PLUS Rounded 1c';
+    --chakra-fonts-body: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --chakra-fonts-mono: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+.bg-color, #bg, body {
+    background: #202023!important;
+    font-family: var(--chakra-fonts-heading);
 }
 
 :root {
     --twitter: #55acee;
     --linkedin: #0077B5;
     --youtube: #bd081c;
+    --chakra-fonts-heading: 'M PLUS Rounded 1c';
+    --chakra-fonts-body: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --chakra-fonts-mono: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+.h2-text {
+    height: 150px;
+    width: 25%;
+}
+
+.h2-text, .twYus, .h2-text h2 {
+    font-family: var(--chakra-fonts-heading)!important;
+    font-weight: 700!important;
+}
+.twYus{
+    font-weight: 600!important;
+}
+
+.nav-principal{
+  height: 65px;
 }
 
 .portfolio, .wxTrs{
-    font-family: Rubik;
+    font-family: var(--chakra-fonts-body);
 }
 
-.h3-text{
-    font-family: 'vt323';
+.fs22{
+    background-color: rgba(255, 255, 255, 0.08);;
 }
 
 .curs {
     cursor: pointer;
 }
 
-.first-section {
-    height: 1550px;
-}
-
-.igual {
-    width: 40%;
-    height: 35%;
-}
-
 .contact {
     width: 60%;
 }
 
-.h2-text {
-    font-family: 'Press Start 2P';
-    padding-top: 100px;
-}
 
 .content {
     padding-top: 100px;
 }
 
-.resume-text {
-    background-color: #1dbdad;
+.avatar{
+    background: linear-gradient(to bottom, aqua, #daffff, black);
+    width: 5em;
+    height: 5em;
 }
 
-.avatar {
-    background: linear-gradient(to bottom, aqua, #daffff, black);
-    table-layout: fill;
-    height: 350px;
-    width: 350px;
-}
-.img-avatar{
-    height: 350px;
-    width: 370px;
+div .avatar {
+    position: absolute;
+    top: 33%;
+    right: 42rem;
 }
 
 .new {
@@ -69,10 +81,6 @@
 
 .twitter, .linkedin, .youtube{
     cursor: pointer;
-}
-
-.identificator{
-    width: 25%;
 }
 
 .identificator .sobre, .blurr img{
