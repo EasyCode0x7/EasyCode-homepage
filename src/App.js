@@ -1,5 +1,4 @@
-import ServicesIoffer from './components/ServicesIoffer';
-import Technologies from './components/Technologies';
+import Work from './components/Work';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Head from './components/Head';
@@ -12,23 +11,19 @@ import React, { Component } from 'react';
 function App() {
 
     return (
-        <div className="App bg-color container">
+        <div className="App bg-color container-sm">
 
             <header>
                 <Header />
             </header>
 
-            <main id='bg' className='px-5'>
+            <main id='bg'>
                 <section className='first-section'>
                     <Head />
                 </section>
 
-                <section className='w-50 blurr'>
-                    <Technologies />
-                </section>
-
-                <section  className='portfolio mx-auto pt-3 fs-2'>
-                    <ServicesIoffer />
+                <section className='blurr'>
+                    <Work />
                 </section>
 
                 <footer>

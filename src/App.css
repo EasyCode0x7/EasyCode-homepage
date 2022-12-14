@@ -1,16 +1,3 @@
-#bg {
-    font-family: var(--chakra-fonts-heading);
-    color: rgba(255, 255, 255, 0.92);;
-    --chakra-fonts-heading: 'M PLUS Rounded 1c';
-    --chakra-fonts-body: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    --chakra-fonts-mono: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-}
-
-.bg-color, #bg, body {
-    background: #202023!important;
-    font-family: var(--chakra-fonts-heading);
-}
-
 :root {
     --twitter: #55acee;
     --linkedin: #0077B5;
@@ -18,41 +5,71 @@
     --chakra-fonts-heading: 'M PLUS Rounded 1c';
     --chakra-fonts-body: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     --chakra-fonts-mono: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    --chakra-fontSizes-4xl: 2.25rem;
+    --color-personate: rgba(255, 255, 255, 0.92);;
 }
 
-.h2-text {
-    height: 150px;
-    width: 25%;
+
+#bg {
+    font-family: var(--chakra-fonts-heading);
+    color: rgba(255, 255, 255, 0.92);
 }
 
-.h2-text, .twYus, .h2-text h2 {
-    font-family: var(--chakra-fonts-heading)!important;
-    font-weight: 700!important;
-}
-.twYus{
-    font-weight: 600!important;
+body {
+    background: #202023!important;
+    font-family: var(--chakra-fonts-body)!important;
 }
 
-.nav-principal{
-  height: 65px;
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 950px!important;
+    }
 }
 
-.portfolio, .wxTrs{
-    font-family: var(--chakra-fonts-body);
+@media (max-width: 1440px) {
+    .css-15t5e7o {
+        min-width: 380px!important;
+    }
+}
+
+
+.blurr {
+    width: 65%;
 }
 
 .fs22{
-    background-color: rgba(255, 255, 255, 0.08);;
+    background-color: rgba(255, 255, 255, 0.08);
 }
 
-.curs {
-    cursor: pointer;
+.ssS {
+    text-decoration: none;
+    color: var(--color-personate);
+    font-family: var(--chakra-fonts-heading)!important;
+    font-weight: 600;
 }
 
-.contact {
-    width: 60%;
+.ssS:hover {
+    color: #ccc;
 }
 
+.h2-text h2 p {
+    font-weight: 400!important;
+    line-height: 1.2;
+    font-size: medium;
+}
+
+.h2-text h2 {
+    font-family: var(--chakra-fonts-heading)!important;
+    font-weight: 700!important;
+    font-size: var(--chakra-fontSizes-4xl);
+}
+
+.css-15t5e7o {
+    text-align: justify;
+    text-indent: 1em;
+    hyphens: auto;
+}
 
 .content {
     padding-top: 100px;
@@ -60,14 +77,8 @@
 
 .avatar{
     background: linear-gradient(to bottom, aqua, #daffff, black);
-    width: 5em;
-    height: 5em;
-}
-
-div .avatar {
-    position: absolute;
-    top: 33%;
-    right: 42rem;
+    width: 6rem;
+    height: 6rem;
 }
 
 .new {
@@ -82,16 +93,20 @@ div .avatar {
 .twitter, .linkedin, .youtube{
     cursor: pointer;
 }
+  
+.identificador {
+    width: 22%;
+}
 
-.identificator .sobre, .blurr img{
+.identificador .sobre, .blurr img{
     transition: .2;
 }
 
-.blurr:hover img, .identificator:hover .sobre{
+.blurr:hover img, .identificador:hover .sobre{
     filter: blur(2px);
 }
 
-.blurr img:hover, .identificator .sobre:hover{
+.blurr img:hover, .identificador .sobre:hover{
     transform: translateY(-3px) scale(1.05);
     filter: none;
 }
@@ -109,7 +124,6 @@ div .avatar {
     color: var(--linkedin);
 }
 .youtube:hover {
-    opacity: 10;
+opacity: 10;
     color: var(--youtube);
 }
-
