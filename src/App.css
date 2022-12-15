@@ -1,0 +1,146 @@
+:root {
+    --twitter: #55acee;
+    --linkedin: #0077B5;
+    --youtube: #bd081c;
+    --chakra-fonts-heading: 'M PLUS Rounded 1c';
+    --chakra-fonts-body: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --chakra-fonts-mono: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    --chakra-fontSizes-4xl: clamp(2.4em, 5vw, 3.2em);;
+    --chakra-fontSizes-normal: clamp(1.1em, 5vw, 1.2em);
+    --color-personate: rgba(255, 255, 255, 0.92);;
+    --cont-size: 1.10rem!important;
+}
+
+#bg {
+    font-family: var(--chakra-fonts-body);
+    line-height: 1.6;
+}
+
+body {
+    background: #202023!important;
+}
+
+#ng, body, .clr {
+    color: var(--color-personate)!important;
+}
+
+.hfs:hover {
+    text-decoration: underline;
+}
+
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 950px!important;
+    }
+}
+
+@media (max-width: 1440px) {
+    .css-15t5e7o {
+        min-width: 380px!important;
+    }
+}
+
+
+.fnt-em {
+    font-size: var(--chakra-fontSizes-normal);
+}
+
+.blurr {
+    width: 75%;
+}
+
+.nav-principal {
+    height: 70px;
+}
+
+.fs22{
+    background-color: rgba(255, 255, 255, 0.08);
+    font-size: var(--cont-size);
+}
+
+.ssS {
+    text-decoration: none;
+    color: var(--color-personate);
+    font-family: var(--chakra-fonts-heading)!important;
+    font-weight: 600;
+}
+
+.ssS:hover {
+    color: #ccc;
+}
+
+.h2-text h2 p {
+    font-weight: 400!important;
+    line-height: 1.2;
+    font-size: medium;
+}
+
+.h2-text h2 {
+    font-family: var(--chakra-fonts-heading)!important;
+    font-weight: 800!important;
+    font-size: var(--chakra-fontSizes-4xl);
+}
+
+.css-15t5e7o {
+    text-align: justify;
+    text-indent: 1.2em;
+    hyphens: auto;
+}
+
+.content {
+    padding-top: 100px;
+}
+
+.avatar{
+    background: linear-gradient(to bottom, aqua, #daffff, black);
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+.new {
+    filter: blur(5px);
+}
+.new:hover{
+    filter: blur(0);
+    transition: .3s;
+    transform: rotate(10deg);
+}
+
+.twitter, .linkedin, .youtube{
+    cursor: pointer;
+}
+  
+.identificador {
+    width: 22%;
+}
+
+.identificador .sobre, .blurr img{
+    transition: .2;
+}
+
+.blurr:hover img, .identificador:hover .sobre{
+    filter: blur(2px);
+}
+
+.blurr img:hover, .identificador .sobre:hover{
+    transform: translateY(-3px) scale(1.05);
+    filter: none;
+}
+
+.twitter, .linkedin, .youtube{
+    color: white;
+    opacity: .6;
+}
+.twitter:hover {
+    color: var(--twitter);
+    opacity: 10;
+}
+.linkedin:hover {
+    opacity: 10;
+    color: var(--linkedin);
+}
+.youtube:hover {
+opacity: 10;
+    color: var(--youtube);
+}
