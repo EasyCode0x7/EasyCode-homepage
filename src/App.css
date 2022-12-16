@@ -20,7 +20,7 @@
 
 @media (min-width: 1400px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        max-width: 950px!important;
+        max-width: 800px!important;
     }
 }
 
@@ -87,15 +87,6 @@
     cursor: pointer;
 }
 
-.blurr:hover img, .onit{
-    filter: blur(2px);
-}
-
-.blurr img:hover, .onit:hover{
-    transform: translateY(-3px) scale(1.05);
-    filter: none;
-}
-
 .twitter, .linkedin, .youtube{
     color: white;
     opacity: .6;
@@ -115,4 +106,3 @@
 opacity: 10;
     color: var(--youtube);
 }
-
