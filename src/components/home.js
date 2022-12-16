@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import '../App.css';
 import deved from '../images/dev-ed-wave.png';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 

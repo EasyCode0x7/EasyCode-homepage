@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Navbar from './components/navbar';
-import Home from './components/home';
 import Footer from './components/footer';
 import "@fontsource/m-plus-rounded-1c";
 import Routed from './components/routes';
@@ -22,18 +21,13 @@ function App() {
             <main id='bg'>
 
                 <Navbar />
-
-                <section className='first-section'>
-                    <Home />
-                </section>
-
-                <footer>
-                    <Footer />
-                </footer>
-
                 <Routed />
 
             </main>
+
+            <footer>
+                <Footer />
+            </footer>
 
         </div>
 
@@ -42,4 +36,5 @@ function App() {
 }
 
 export default App;
+
 

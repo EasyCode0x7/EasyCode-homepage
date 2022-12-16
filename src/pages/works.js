@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import Navbar from '../components/navbar';
 
 
 const Works = () => {
     return (
-        <div>
+        <div className="container" style={{paddingTop: "120px"}}>
             <h1>Hello, this is the Works page. Enjoy,!</h1>
         </div>
     )
 }
 
 export default Works;
+

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../App.css'
 
 
 
@@ -6,8 +7,8 @@ function Footer(){
 
     return(
 
-        <div>
-            <p>By: @Denichel</p>
+        <div style={{paddingTop: "120px"}}>
+            <p className='text-center text-secondary'>© 2022 Juan Alberto R. Santana. All Rights Reserved.</p>
         </div>
     )
 }
