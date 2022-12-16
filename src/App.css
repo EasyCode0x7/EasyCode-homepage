@@ -20,7 +20,7 @@
 
 @media (min-width: 1400px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        max-width: 800px!important;
+        max-width: 800px;
     }
 }
 
@@ -92,17 +92,30 @@
     opacity: .6;
 }
 
-.twitter:hover {
+.twitter {
     color: var(--twitter);
     opacity: 10;
 }
 
-.linkedin:hover {
+.linkedin {
     opacity: 10;
     color: var(--linkedin);
 }
 
-.youtube:hover {
-opacity: 10;
+.youtube {
+    opacity: 10;
     color: var(--youtube);
 }
+
+.twitter:hover {
+    color: aqua;
+}
+
+.linkedin:hover {
+    color: blueviolet;
+}
+
+.youtube:hover {
+    color: crimson;
+}
+
