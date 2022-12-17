@@ -3,6 +3,7 @@ import Navbar from './components/navbar';
 import Footer from './components/footer';
 import "@fontsource/m-plus-rounded-1c";
 import Routed from './components/routes';
+import Quote from './components/quote';
 
 
 
@@ -21,6 +22,7 @@ function App() {
             <main id='bg'>
 
                 <Navbar />
+                <Quote />
                 <Routed />
 
             </main>
