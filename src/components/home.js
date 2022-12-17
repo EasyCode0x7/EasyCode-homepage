@@ -10,6 +10,7 @@ function Home() {
     const Twitter = "https://twitter.com/EasyCode0x7";
     const Linkedin = "https://linkedin.com/";
     const YTChannel = "https://youtube.com/@EasyCode_";
+    const TM = "https://www.craftz.dog/";
 
     return (
         <div>
@@ -31,7 +32,7 @@ function Home() {
                     <p className='wxTrs text-start fnt-em'>
                         Freelancer providing services for programming and ethical hacking needs.
                         Join me down below and let's get cracking!
-                        Happy hacking!
+                        Happy hacking!. Website inspired in Takuya Matsuyama's webpage, <Link to={TM} className="text-warning">his portfolio</Link>.
                     </p>
                 </div>
 
