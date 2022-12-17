@@ -30,7 +30,7 @@ const Home = () => {
 
                 <div>
                     <hr></hr>
-                    <p className='wxTrs text-start fnt-em css-15t5e7o'>
+                    <p className='wxTrs text-start fnt-em css-15t5e7o w-50'>
                         Freelancer providing services for programming and ethical hacking needs.
                         Join me down below and let's get cracking!
                         Happy hacking!. Website inspired in <a href={TM} className="text-warning text-decoration-none">Takuya Matsuyama's</a> webpage.

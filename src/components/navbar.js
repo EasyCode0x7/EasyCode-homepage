@@ -14,7 +14,7 @@ const Navbar = () => {
 
                 <Link 
                     to="/" 
-                    className="ssS fw-bolder">
+                    className="ssS fw-bold">
                         DevelopedbyDe
                 </Link>
 
