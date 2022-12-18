@@ -34,7 +34,7 @@ const Navbar = () => {
 
                 </ul>
 
-                <div class="rounded list-group-item-warning">
+                <div class="rounded list-group-item-danger">
                     <a class="nav-link text-black m-2" href="/resume"><FaRegSun /></a>
                 </div>
 
@@ -44,4 +44,5 @@ const Navbar = () => {
 }
 
 export default Navbar;
+
 

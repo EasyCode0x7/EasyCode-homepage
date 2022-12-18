@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
-import deved from '../images/dev-ed-wave.png';
-import { Link } from 'react-router-dom';
+import deved from '../images/dev.jfif';
+import { Link, NavLink } from 'react-router-dom';
 
 
 
@@ -11,6 +11,8 @@ const Home = () => {
     const Linkedin = "https://linkedin.com/";
     const YTChannel = "https://youtube.com/@EasyCode_";
     const Tm = "https://www.craftz.dog/";
+    const eJPT = "https://verified.elearnsecurity.com/certificates/6b4943a0-26a2-4ce7-8063-aff8e6bda825";
+    const javaScript = "https://www.freecodecamp.org/certification/crashoverride0x7/javascript-algorithms-and-data-structures";
 
     const styleSize = {
         fontSize: "2.2rem"
@@ -65,8 +67,8 @@ const Home = () => {
 
                 </div>
 
-                <div className='text-start h2-text pt-3 pb-1 d-flex justify-content-between'>
-                    <h2 className='fw-bold' style={styleSize}>Juan Alberto<p className="pt-1">Digital Craftsman (/ Developer / Pentester)</p></h2>
+                <div className='text-start h2-text pt-3 d-flex justify-content-between'>
+                    <h2 className='fw-bold fnt-heading' style={styleSize}>Juan Alberto<p className="pt-2">Digital Craftsman (/ Developer / Pentester)</p></h2>
                     <img className='avatar rounded-circle img-responsive' src={deved} />
                 </div>
 
@@ -81,7 +83,7 @@ const Home = () => {
 
             </div>
 
-            <div className='gap-5 py-3 d-flex' style={styleSize}>
+            <div className='gap-4 py-3 d-flex' style={styleSize}>
                 <a href={Twitter}><i class="fa-brands fa-twitter twitter"></i></a>
                 <a href={Linkedin}><i class="fa-brands fa-linkedin linkedin"></i></a>
                 <a href={YTChannel}><i class="fa-brands fa-youtube youtube"></i></a>
@@ -108,10 +110,17 @@ const Home = () => {
 
                 <div className='pt-4 eternal-blue'>
                     <h2 className='underline fnt-heading'>Bio</h2>
-                    <p className='css-15t5e7o'>
-                        I offer from a wide range of services, including system administration, 
-                        programming and ethical hacking.
-                    </p>
+                    <div className='css-15t5e7o d-flex w-75'>
+                        <p className='fw-bold'>2001</p>
+                        <p>Born in Barahona (בראהונה), Dominican Rep.</p>
+                    </div>
+
+                    <div className='css-15t5e7o d-flex w-75'>
+                        <p className='fw-bold'>2022</p>
+                        <p>I completed my professional training in two Schools called, eLearnSecurity, 
+                            in which I was certified as <a href={eJPT} className="text-warning">eJPT</a>, and the other called
+                             FreeCodeCamp, in which I was certified in <a href={javaScript} className="text-warning">Javascript and Data Structures with Algorithms</a> and Reactjs.</p>
+                    </div>
                 </div>
 
                 <div className='pt-4 eternal-blue'>
