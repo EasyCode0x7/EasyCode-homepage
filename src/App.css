@@ -1,0 +1,116 @@
+:root {
+    --twitter: #55acee;
+    --linkedin: #0077B5;
+    --youtube: #bd081c;
+    --chakra-fonts-heading: 'M PLUS Rounded 1c';
+    --chakra-fonts-body: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --chakra-fonts-mono: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    --chakra-fontSizes-4xl: clamp(2.4em, 5vw, 3.2em);;
+    --chakra-fontSizes-normal: clamp(.5em, 4vw, 1.1em);
+    --color-personate: rgba(255, 255, 255, 0.92);;
+    --cont-size: 1.40em!important;
+}
+
+
+#bg, body {
+    color: var(--color-personate)!important;
+    background: #202023!important;
+    font-family: var(--chakra-fonts-body);
+}
+
+@media (min-width: 370px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 700px!important;
+    }
+}
+
+@media (max-width: 850px) {
+    .css-15t5e7, .eternal-blue {
+        min-width: 370px!important;
+    }
+}
+
+.styleTextColor {
+    color: #CD5C5C;
+    text-decoration: none;
+}
+
+.fnt-heading {
+    font-family: var(--chakra-fonts-heading)!important;
+}
+
+.fnt-normal {
+    font-size: var(--chakra-fontSizes-normal);
+}
+
+.principal-nav {
+    background: #20202380;
+    backdrop-filter: blur(4px);
+}
+
+.hfs:hover {
+    text-decoration: underline;
+}
+
+.fs22{
+    background-color: rgba(255, 255, 255, 0.08);
+    padding-bottom: 0.6rem;
+    padding-top: 0.6rem;
+}
+
+.ssS, .h2-text {
+    text-decoration: none;
+    color: var(--color-personate)!important;
+}
+
+.ssS {
+    font-size: 1.15em;
+}
+
+.h2-text h2 p {
+    font-weight: 200!important;
+    font-size: .45em;
+}
+
+.css-15t5e7o {
+    font-size: var(--chakra-fontSizes-normal);
+    text-align: justify;
+    text-indent: 1.2em;
+}
+
+.underline {
+    font-size: var(--cont-size);
+    padding-bottom: 5px;
+    text-decoration: overline;
+    text-decoration-color: gray;
+}
+
+.twitter, .linkedin, .youtube{
+    cursor: pointer;
+}
+
+.twitter:hover {
+    color: var(--twitter);
+}
+.linkedin:hover {
+    color: #55acee;
+}
+.youtube:hover {
+    color: red;
+}
+
+.twitter {
+    color: #0077B5;
+    opacity: 10;
+}
+
+.linkedin {
+    color: var(--linkedin);
+    opacity: 10;
+}
+
+.youtube {
+opacity: 10;
+    color: var(--youtube);
+}
+
