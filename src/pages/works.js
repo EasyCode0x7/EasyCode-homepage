@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import '../App.css'
 
 
 const Works = () => {
     return (
         <div className="container" style={{paddingTop: "120px"}}>
-            <h1>Hello, this is the Works page. Enjoy,!</h1>
+            <h3 className="fnt-heading">Works</h3>
         </div>
     )
 }

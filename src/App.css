@@ -6,9 +6,9 @@
     --chakra-fonts-body: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     --chakra-fonts-mono: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
     --chakra-fontSizes-4xl: clamp(2.4em, 5vw, 3.2em);;
-    --chakra-fontSizes-normal: clamp(1.05em, 5vw, 1.15em);
+    --chakra-fontSizes-normal: clamp(.8em, 5vw, 1.05em);
     --color-personate: rgba(255, 255, 255, 0.92);;
-    --cont-size: 1.03rem!important;
+    --cont-size: 1.40em!important;
 }
 
 
@@ -20,36 +20,33 @@
 
 @media (min-width: 370px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        max-width: 850px!important;
+        max-width: 800px!important;
     }
 }
 
 @media (max-width: 850px) {
-    .css-15t5e7o {
+    .css-15t5e7, .eternal-blue {
         min-width: 370px!important;
     }
 }
+
+
+.fnt-heading {
+    font-family: var(--chakra-fonts-heading)!important;
+}
+
 
 .principal-nav {
     background: #20202380;
     backdrop-filter: blur(4px);
 }
 
-.eternal-blue {
-    min-width: 370px;
-}
-
 .hfs:hover {
     text-decoration: underline;
 }
 
-.fnt-em {
-    font-size: var(--chakra-fontSizes-normal);
-}
-
 .fs22{
     background-color: rgba(255, 255, 255, 0.08);
-    font-size: var(--cont-size);
     padding-bottom: 0.6rem;
     padding-top: 0.6rem;
 }
@@ -57,7 +54,6 @@
 .ssS, .h2-text {
     text-decoration: none;
     color: var(--color-personate)!important;
-    font-family: var(--chakra-fonts-heading)!important;
 }
 
 .ssS {
@@ -65,26 +61,23 @@
 }
 
 .h2-text h2 p {
-    font-weight: 500!important;
+    font-weight: 200!important;
     font-size: .45em;
 }
 
 .css-15t5e7o {
+    font-size: var(--chakra-fontSizes-normal);
     text-align: justify;
     text-indent: 1.2em;
     hyphens: auto;
 }
 
 .underline {
+    font-size: var(--cont-size);
+    padding-bottom: 5px;
     text-decoration: underline;
     text-decoration-color: gray;
-    font-size: 1.2em;
     text-decoration-style: double;
-    padding-bottom: 5px;
-}
-
-.content {
-    padding-top: 80px;
 }
 
 .avatar{
@@ -92,11 +85,6 @@
     padding-bottom: 15px;
     width: 7.5rem;
     height: 7.5rem;
-}
-
-.blurr img:hover, .onit:hover{
-    transform: translateY(-3px) scale(1.05);
-    filter: none;
 }
 
 .twitter, .linkedin, .youtube{
@@ -117,5 +105,4 @@
 opacity: 10;
     color: var(--youtube);
 }
-
 

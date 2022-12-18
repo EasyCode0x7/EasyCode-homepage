@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BsDisplay, BsFillSunFill } from "react-icons/bs";
+import { FaRegSun } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 
@@ -10,11 +10,13 @@ const Navbar = () => {
     return (
         <div>
 
-            <nav path="/" className='navbar principal-nav rounded fixed-top navbar-expand justify-content-evenly'>
+            <nav 
+                path="/" 
+                className='navbar principal-nav rounded fixed-top navbar-expand justify-content-evenly'>
 
                 <Link 
                     to="/" 
-                    className="ssS fw-bold">
+                    className="ssS fw-bold fnt-heading">
                         DevelopedbyDe
                 </Link>
 
@@ -33,7 +35,7 @@ const Navbar = () => {
                 </ul>
 
                 <div class="rounded list-group-item-warning">
-                    <a class="nav-link text-danger" href="/resume"><BsFillSunFill /></a>
+                    <a class="nav-link text-black m-2" href="/resume"><FaRegSun /></a>
                 </div>
 
             </nav>
