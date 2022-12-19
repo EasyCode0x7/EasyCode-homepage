@@ -9,8 +9,8 @@
     --chakra-fontSizes-normal: clamp(.5em, 4vw, 1.1em);
     --color-personate: rgba(255, 255, 255, 0.92);;
     --cont-size: 1.40em!important;
+    --red: rgb(205, 92, 92);
 }
-
 
 #bg, body {
     color: var(--color-personate)!important;
@@ -30,9 +30,20 @@
     }
 }
 
+
+.h5, h5 {
+    font-size: 1.10rem!important;
+}
+
+
 .styleTextColor {
-    color: #CD5C5C;
+    color: var(--red);
     text-decoration: none;
+}
+
+.styleTextColor:hover {
+    text-decoration: underline;
+    color: var(--red);
 }
 
 .fnt-heading {
@@ -45,7 +56,7 @@
 
 .principal-nav {
     background: #20202380;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(8px);
 }
 
 .hfs:hover {
@@ -67,6 +78,10 @@
     font-size: 1.15em;
 }
 
+.w-35 {
+    width: 35%;
+}
+
 .h2-text h2 p {
     font-weight: 200!important;
     font-size: .45em;
@@ -78,39 +93,17 @@
     text-indent: 1.2em;
 }
 
+.l15t5e7o {
+    text-decoration: none;
+    cursor: pointer;
+    text-indent: 1.2em;
+    font-size: var(--chakra-fontSizes-normal);
+}
+
 .underline {
     font-size: var(--cont-size);
     padding-bottom: 5px;
     text-decoration: overline;
     text-decoration-color: gray;
-}
-
-.twitter, .linkedin, .youtube{
-    cursor: pointer;
-}
-
-.twitter:hover {
-    color: var(--twitter);
-}
-.linkedin:hover {
-    color: #55acee;
-}
-.youtube:hover {
-    color: red;
-}
-
-.twitter {
-    color: #0077B5;
-    opacity: 10;
-}
-
-.linkedin {
-    color: var(--linkedin);
-    opacity: 10;
-}
-
-.youtube {
-opacity: 10;
-    color: var(--youtube);
 }
 

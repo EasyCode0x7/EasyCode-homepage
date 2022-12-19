@@ -23,7 +23,6 @@ const Home = () => {
         width: "90%"
     }
 
-    
     return (
 
         <div>
@@ -101,7 +100,7 @@ const Home = () => {
                         design to solving real-life problems with code. When he's not online, he loves to hang out hobnobbing and
                         with her family. Currently, he is looking for a job in a company that will make him grow as a professional.
                             He will post content to market his products and his YouTube channel called "
-                            <a className='text-decoration-none styleTextColor' href={YTChannel}> Easy Code </a>
+                            <a className='styleTextColor' href={YTChannel}> Easy Code </a>
                             ".
                     </p>
                 </div>
@@ -120,7 +119,7 @@ const Home = () => {
                         <h5>2022</h5>
                         <p className='css-15t5e7o'>I completed my professional training in two Schools called, eLearnSecurity, 
                             in which I was certified as <a href={eJPT} className="styleTextColor">eJPT</a>, and the other called
-                             FreeCodeCamp, in which I was certified in <a href={javaScript} className="styleTextColor">Javascript and Data Structures with Algorithms</a> and Reactjs.</p>
+                             FreeCodeCamp, in which I was certified in <a href={javaScript} className="styleTextColor">Javascript Algorithms and Data Structures</a> and Reactjs.</p>
                     </div>
                 </div>
 
@@ -135,25 +134,19 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className='pt-4 eternal-blue'>
+                <div className='pt-4 eternal-blue w-35'>
                     <h2 className='underline fnt-heading'>On the web</h2>
-                    <div className='d-flex css-15t5e7o'>
+                    <div className='d-flex l15t5e7o styleTextColor'>
                         <h5><FaGithubSquare /></h5>
-                        <p className='css-15t5e7o'>
-                            <a href='https://github.com/EasyCode0x7'>@EasyCode0x7</a>
-                        </p>
+                        <a className="styleTextColor" href='https://github.com/EasyCode0x7'>@EasyCode0x7</a>
                     </div>
-                    <div className='d-flex css-15t5e7o'>
+                    <div className='d-flex l15t5e7o styleTextColor'>
                         <h5><FaTwitterSquare /></h5>
-                        <p className='css-15t5e7o'>
-                            <a href='https://github.com/EasyCode0x7'>@EasyCode0x7</a>
-                        </p>
+                        <a className="styleTextColor" href='https://twitter.com/EasyCode0x7'>@EasyCode0x7</a>
                     </div>
-                    <div className='d-flex css-15t5e7o'>
+                    <div className='d-flex l15t5e7o styleTextColor'>
                         <h5><FaLinkedin /></h5>
-                        <p className='css-15t5e7o'>
-                            <a href='https://github.com/EasyCode0x7'>@EasyCode0x7</a>
-                        </p>
+                        <a className="styleTextColor" href='https://linkedin.com/EasyCode0x7'>@EasyCode0x7</a>
                     </div>
                 </div>
 
