@@ -9,19 +9,37 @@ const Works = () => {
 
 
     const dev = {
-
-        
+        width: "100%",
+        height: "80%",
+        borderRadius: "20px",
     }
 
 
     return (
-        <div className="container" style={{paddingTop: "120px"}}>
+        <div style={{paddingTop: "120px"}}>
             <h3 className="fnt-heading">Works</h3>
 
-            <div className='dev'>
-                <img className='w-50 h-50' src={inkdrop}></img>
-                <img className='w-50 h-50' src={inkdrop2}></img>
+            <div className='text-center dev'>
+
+                <div>
+                    <span>
+                        <img style={dev} src={inkdrop}/>
+                        daf
+                    </span>
+                </div>
+
+                <div>
+                    <span>
+                        <img style={dev} src={inkdrop2}/>
+                        asf
+                    </span>
+                </div>
+                
             </div>
+
+            <hr></hr>
+            <h3>New</h3>
+
         </div>
     )
 }

@@ -11,16 +11,14 @@ const Home = () => {
     const Twitter = "https://twitter.com/EasyCode0x7";
     const Linkedin = "https://linkedin.com/";
     const YTChannel = "https://youtube.com/@EasyCode_";
+    const Github = "https://github.com/EasyCode0x7";
+
     const Tm = "https://www.craftz.dog/";
     const eJPT = "https://verified.elearnsecurity.com/certificates/6b4943a0-26a2-4ce7-8063-aff8e6bda825";
     const javaScript = "https://www.freecodecamp.org/certification/crashoverride0x7/javascript-algorithms-and-data-structures";
 
-    const styleSize = {
-        fontSize: "2.2rem"
-    }
-
-    const styleWidthPages = {
-        width: "90%"
+    const backgroundColor = {
+        backgroundColor: "#CD5C5C"
     }
 
     return (
@@ -77,9 +75,9 @@ const Home = () => {
                     <img className='rounded-circle' style={{width: "110px", height: "110px"}} src={deved} />
                 </div>
 
-                <div style={styleWidthPages}>
+                <div>
                     <hr></hr>
-                    <p className='text-start fnt-normal'>
+                    <p className='text-start fnt-normal' style={{width: "80%"}}>
                         Freelancer providing services for programming and ethical hacking needs.
                         Join me down below and let's get cracking!
                         Happy hacking!. Website inspired in <a 
@@ -90,7 +88,7 @@ const Home = () => {
 
             </div>
 
-            <div style={styleWidthPages}>
+            <div>
 
                 <div  className='pt-4 eternal-blue'>
                     <h2  className='underline fnt-heading'>Work</h2>
@@ -106,7 +104,7 @@ const Home = () => {
                 </div>
 
                 <div class="py-4 d-flex">
-                    <Link to='/works' class="btn mx-auto" style={{backgroundColor: "#CD5C5C"}}>My portfolio</Link>
+                    <Link to='/works' class="btn mx-auto" style={backgroundColor}>My portfolio</Link>
                 </div>
 
                 <div className='pt-4 eternal-blue'>
@@ -138,22 +136,22 @@ const Home = () => {
                     <h2 className='underline fnt-heading'>On the web</h2>
                     <div className='d-flex l15t5e7o styleTextColor'>
                         <h5><FaGithubSquare /></h5>
-                        <a className="styleTextColor" href='https://github.com/EasyCode0x7'>@EasyCode0x7</a>
+                        <a className="styleTextColor" href={Github}>@EasyCode0x7</a>
                     </div>
                     <div className='d-flex l15t5e7o styleTextColor'>
                         <h5><FaTwitterSquare /></h5>
-                        <a className="styleTextColor" href='https://twitter.com/EasyCode0x7'>@EasyCode0x7</a>
+                        <a className="styleTextColor" href={Twitter}>@EasyCode0x7</a>
                     </div>
                     <div className='d-flex l15t5e7o styleTextColor'>
                         <h5><FaLinkedin /></h5>
-                        <a className="styleTextColor" href='https://linkedin.com/EasyCode0x7'>@EasyCode0x7</a>
+                        <a className="styleTextColor" href={Linkedin}>@EasyCode0x7</a>
                     </div>
                 </div>
 
             </div>
 
             <div class="py-4 d-flex">
-                <Link to='/posts' class="btn mx-auto" style={{backgroundColor: "#CD5C5C"}}>Popular posts</Link>
+                <Link to='/posts' class="btn mx-auto" style={backgroundColor}>Popular posts</Link>
             </div>
 
         </div>
