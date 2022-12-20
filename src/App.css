@@ -55,7 +55,7 @@
 
 .principal-nav {
     background: #20202380;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(15px);
 }
 
 .hfs:hover {
