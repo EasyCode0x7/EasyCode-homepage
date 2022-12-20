@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import { FaGithubSquare, FaTwitterSquare, FaLinkedin } from 'react-icons/fa';
-import '../App.css';
+import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import deved from '../images/dev.jpeg';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import '../App.css';
 
 
 
 const Home = () => {
+
 
     const Twitter = "https://twitter.com/EasyCode0x7";
     const Linkedin = "https://linkedin.com/";
@@ -17,9 +18,10 @@ const Home = () => {
     const eJPT = "https://verified.elearnsecurity.com/certificates/6b4943a0-26a2-4ce7-8063-aff8e6bda825";
     const javaScript = "https://www.freecodecamp.org/certification/crashoverride0x7/javascript-algorithms-and-data-structures";
 
-    const backgroundColor = {
-        backgroundColor: "#CD5C5C"
-    }
+    const bgColor = { backgroundColor: "#CD5C5C" }
+    const mLogo = { width: "110px", height: "110px" }
+    const fFont = { fontSize: "var(--chakra-fontSizes-normal)" }
+
 
     return (
 
@@ -46,7 +48,7 @@ const Home = () => {
                                     d="M19.212,17.136C19.212,17.136 12.651,19.306 12.84,25.174C12.888,28.022 10.569,28.548 11.073,32.567C11.727,34.322 12.649,36.92 15.89,36.85C19.131,36.781 19.603,34.354 23.377,32.97C27.151,31.586 31.009,33.828 33.802,31.213C36.596,28.598 35.188,24.468 31.876,22.731C28.564,20.995 24.793,16.327 19.212,17.136Z"></path>
                         </svg>
                     </span>
-                    Hi, I'm an inspired web developer based in Spain!
+                    Hi, I'm an inspired front-end developer based in Spain!
                     <span className="pe-5">
                         <svg 
                             width="15" 
@@ -71,13 +73,13 @@ const Home = () => {
                 </div>
 
                 <div className='text-start h2-text pt-3 d-flex justify-content-between'>
-                    <h2 className='fw-bold fnt-heading' >Juan Alberto<p className="pt-2">Digital Craftsman (/ Developer / Pentester)</p></h2>
-                    <img className='rounded-circle' style={{width: "110px", height: "110px"}} src={deved} />
+                    <h2 className='fw-bold fnt-heading name-fnt'>Juan Alberto<p className="pt-2 sub-name">Digital Craftsman (/ Developer / Pentester)</p></h2>
+                    <img className='rounded-circle' style={mLogo} src={deved} />
                 </div>
 
                 <div>
                     <hr></hr>
-                    <p className='text-start fnt-normal' style={{width: "80%"}}>
+                    <p className='text-start' style={fFont}>
                         Freelancer providing services for programming and ethical hacking needs.
                         Join me down below and let's get cracking!
                         Happy hacking!. Website inspired in <a 
@@ -90,7 +92,7 @@ const Home = () => {
 
             <div>
 
-                <div  className='pt-4 eternal-blue'>
+                <div  className='pt-5'>
                     <h2  className='underline fnt-heading'>Work</h2>
                     <p className='css-15t5e7o'>
                         Juan is an independent Front-End Developer based in Spain with a passion for creating digital
@@ -104,54 +106,53 @@ const Home = () => {
                 </div>
 
                 <div class="py-4 d-flex">
-                    <Link to='/works' class="btn mx-auto" style={backgroundColor}>My portfolio</Link>
+                    <Link to='/works' class="btn mx-auto" style={bgColor}>My portfolio</Link>
                 </div>
 
-                <div className='pt-4 eternal-blue'>
+                <div className='pt-4'>
                     <h2 className='underline fnt-heading'>Bio</h2>
                     <div className='d-flex'>
                         <h5>2001</h5>
-                        <p className='css-15t5e7o'>Born in Barahona (בראהונה), Dominican Rep.</p>
+                        <p className='down'>Born in Barahona (בראהונה), Dominican Rep.</p>
                     </div>
                     <div className='d-flex'>
                         <h5>2022</h5>
-                        <p className='css-15t5e7o'>I completed my professional training in two Schools called, eLearnSecurity, 
+                        <p className='down'>I completed my professional training in two Schools called, eLearnSecurity, 
                             in which I was certified as <a href={eJPT} className="styleTextColor">eJPT</a>, and the other called
                              FreeCodeCamp, in which I was certified in <a href={javaScript} className="styleTextColor">Javascript Algorithms and Data Structures</a> and Reactjs.</p>
                     </div>
                 </div>
 
-                <div className='pt-4 eternal-blue'>
+                <div className='pt-4'>
                     <h2 className='underline fnt-heading'>More</h2>
                     <div className='d-flex'>
-                        <h5>BashTool</h5>
-                        <p className='css-15t5e7o'>
+                        <h5>Archinstall</h5>
+                        <p className='down'>
                         Tool that automatically installs all the dependencies and utilities 
                         necessary to configure a custom development integer.
                         </p>
                     </div>
                 </div>
 
-                <div className='pt-4 eternal-blue w-35'>
+                <div className='pt-4'>
                     <h2 className='underline fnt-heading'>On the web</h2>
-                    <div className='d-flex l15t5e7o styleTextColor'>
-                        <h5><FaGithubSquare /></h5>
-                        <a className="styleTextColor" href={Github}>@EasyCode0x7</a>
-                    </div>
-                    <div className='d-flex l15t5e7o styleTextColor'>
-                        <h5><FaTwitterSquare /></h5>
-                        <a className="styleTextColor" href={Twitter}>@EasyCode0x7</a>
-                    </div>
-                    <div className='d-flex l15t5e7o styleTextColor'>
-                        <h5><FaLinkedin /></h5>
-                        <a className="styleTextColor" href={Linkedin}>@EasyCode0x7</a>
-                    </div>
+                    <ul className='l15t5e7o'>
+                        <li href={Github} className='styleTextColor rounded d-flex'>
+                            <button className="btn hola text-white"><FaGithub/>@EasyCode0x7</button>
+                        </li>
+                        <li className='rounded d-flex styleTextColor'>
+                            <button type='submit' className="btn hola text-white" href={Twitter}><FaTwitter />@EasyCode0x7</button>
+                        </li>
+                        <li className='styleTextColor rounded d-flex'>
+                            <button className="btn hola text-white" href={Linkedin}><FaLinkedin />@EasyCode0x7</button>
+                        </li>
+                    </ul>
                 </div>
 
             </div>
 
             <div class="py-4 d-flex">
-                <Link to='/posts' class="btn mx-auto" style={backgroundColor}>Popular posts</Link>
+                <Link to='/posts' class="btn mx-auto" style={bgColor}>Popular posts</Link>
             </div>
 
         </div>
