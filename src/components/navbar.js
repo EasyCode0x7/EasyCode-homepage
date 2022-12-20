@@ -7,12 +7,14 @@ const Navbar = () => {
 
     const Github = "https://github.com/EasyCode0x7/EasyCode-homepage";
 
+    const navBar = { width: "30%", left: "35%", position: "fixed" }
+
     return (
         <div>
 
             <nav 
-                path="/" 
-                className='navbar principal-nav rounded fixed-top navbar-expand justify-content-evenly'>
+                path="/"
+                className='navbar principal-nav rounded' style={navBar}>
 
                 <Link 
                     to="/" 
@@ -20,7 +22,7 @@ const Navbar = () => {
                         DevelopedbyDe
                 </Link>
 
-                <ul class="navbar-nav gap-3" style={{fontSize: "1.05em"}}>
+                <ul class="gap-3 d-flex align-items-center" style={{fontSize: "1.05em"}}>
 
                     <li class="hfs">
                         <Link to="/works" class="nav-link text-white">Works</Link>
