@@ -14,13 +14,16 @@ const Home = () => {
     const YTChannel = "https://youtube.com/@EasyCode_";
     const Github = "https://github.com/EasyCode0x7";
 
+    {/* Certifieds */}
     const Tm = "https://www.craftz.dog/";
     const eJPT = "https://verified.elearnsecurity.com/certificates/6b4943a0-26a2-4ce7-8063-aff8e6bda825";
     const javaScript = "https://www.freecodecamp.org/certification/crashoverride0x7/javascript-algorithms-and-data-structures";
 
+    {/* styles */}
     const bgColor = { backgroundColor: "#CD5C5C" }
     const mLogo = { width: "110px", height: "110px" }
     const fFont = { fontSize: "var(--chakra-fontSizes-normal)" }
+    const socialM = { width: "205px", height: "130px", paddingTop: "3px" }
 
 
     return (
@@ -73,7 +76,7 @@ const Home = () => {
                 </div>
 
                 <div className='text-start h2-text pt-3 d-flex justify-content-between'>
-                    <h2 className='fw-bold fnt-heading name-fnt'>Juan Alberto<p className="pt-2 sub-name">Digital Craftsman (/ Developer / Pentester)</p></h2>
+                    <h2 className='fw-bold fnt-heading name-fnt'>Juan Alberto<p className="pt-2 sub-name">Digital Craftsman (/ Developer / Pentester /)</p></h2>
                     <img className='rounded-circle' style={mLogo} src={deved} />
                 </div>
 
@@ -113,7 +116,7 @@ const Home = () => {
                     <h2 className='underline fnt-heading'>Bio</h2>
                     <div className='d-flex'>
                         <h5>2001</h5>
-                        <p className='down'>Born in Barahona (בראהונה), Dominican Rep.</p>
+                        <p className='down'>Born in Barahona ( בראהונה ), Dominican Rep.</p>
                     </div>
                     <div className='d-flex'>
                         <h5>2022</h5>
@@ -136,19 +139,26 @@ const Home = () => {
 
                 <div className='pt-4'>
                     <h2 className='underline fnt-heading'>On the web</h2>
-                    <ul className='l15t5e7o'>
-                        <li href={Github} className='styleTextColor rounded d-flex'>
-                            <button className="btn hola text-white"><FaGithub/>@EasyCode0x7</button>
+                    <ul className='l15t5e7o' style={socialM}>
+
+                        <li href={Github}>
+                            <a className='rounded social d-flex' href={Github}>
+                                <span className='d-flex align-items-center'><FaGithub/> @EasyCode0x7</span>
+                            </a>
                         </li>
-                        <li className='rounded d-flex styleTextColor'>
-                            <button type='submit' className="btn hola text-white" href={Twitter}><FaTwitter />@EasyCode0x7</button>
+                        <li>
+                        <a className='rounded social d-flex' href={Twitter}>
+                                <span className='d-flex align-items-center'><FaTwitter /> @EasyCode0x7</span>
+                            </a>
                         </li>
-                        <li className='styleTextColor rounded d-flex'>
-                            <button className="btn hola text-white" href={Linkedin}><FaLinkedin />@EasyCode0x7</button>
+                        <li>
+                            <a className='rounded social d-flex' href={Linkedin}>
+                                <span className='d-flex align-items-center'><FaLinkedin /> @EasyCode0x7</span>
+                            </a>
                         </li>
                     </ul>
-                </div>
 
+                </div>
             </div>
 
             <div class="py-4 d-flex">

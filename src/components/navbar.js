@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { FaRegSun } from "react-icons/fa";
+import { FaUssunnah } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 
@@ -7,23 +7,19 @@ const Navbar = () => {
 
     const Github = "https://github.com/EasyCode0x7/EasyCode-homepage";
 
-    const navBar = { width: "30%", left: "35%", position: "fixed" }
 
     return (
         <div>
 
             <nav 
                 path="/"
-                className='navbar principal-nav rounded' style={navBar}>
+                className='principal-nav rounded'>
 
-                <Link 
-                    to="/" 
-                    className="ssS fw-bold fnt-heading">
-                        DevelopedbyDe
-                </Link>
+                <ul class="gap-3 d-flex m-0 p-0" style={{fontSize: "1.05em"}}>
 
-                <ul class="gap-3 d-flex align-items-center" style={{fontSize: "1.05em"}}>
-
+                    <li>
+                        <Link to="/" className="ssS fw-bold fnt-heading">DevelopedbyDe</Link>
+                    </li>
                     <li class="hfs">
                         <Link to="/works" class="nav-link text-white">Works</Link>
                     </li>
@@ -34,11 +30,11 @@ const Navbar = () => {
                         <a href={Github} class="nav-link text-white"> <i class="fa-brands fa-github"></i> Source</a>
                     </li>
 
-                </ul>
+                    <li class="rounded list-group-item-danger">
+                        <a class="text-black" href="/resume"><FaUssunnah /></a>
+                    </li>
 
-                <div class="rounded list-group-item-danger">
-                    <a class="nav-link text-black m-2" href="/resume"><FaRegSun /></a>
-                </div>
+                </ul>
 
             </nav>
         </div>

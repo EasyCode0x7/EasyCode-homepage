@@ -1,6 +1,7 @@
-import React, { Component } from "react";
 
 
+
+{/*
 const Quote = () => {
 
     return (
@@ -18,3 +19,22 @@ const Quote = () => {
 
 
 export default Quote;
+
+*/}
+
+
+let api = "https://www.neutrinoapi.com/apis.json";
+
+fetch(api)
+.then(res => res.json()).then(response => {
+        
+    [response].map((res) => {
+        console.log([res].length);
+        for (let i = 0; i < [res].length; i++) {
+            console.log([res].length);
+        }
+    });
+
+})
+
+
