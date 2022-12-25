@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import "@fontsource/m-plus-rounded-1c";
@@ -8,6 +8,8 @@ import Routed from './components/routes';
 
 
 const App = () => {
+
+{/*    const [darkMode, setDarkMode] = useState; */}
 
     return (
 

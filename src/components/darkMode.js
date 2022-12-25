@@ -1,33 +1,26 @@
-import { HiOutlineMoon } from "react-icons/hi";
+import React, { Component } from 'react';
+import { HiOutlineSun, HiOutlineMoon } from "react-icons/hi";
 
-const LightTheme = {
-    text: "#23374D",
+
+
+const LightTheme = [{
+    text: "#1a202c",
     toggle: "#757575",
     hover: "#0085FF",
-    bgc: "#eee",
-};
+    bgc: "#f0e7db",
+}];
 
-const DarkTheme = {
-    text: "eee",
+const DarkTheme = [{
+    text: "#eeeeee",
     toggle: "#0085FF",
     hover: "#00D4FF",
-    bgc: "323374D",
-}
+    bgc: "#202023",
+}];
+
 
 const Themes = {
-    light: LightTheme,
-    dark: DarkTheme,
+    
+    return LightTheme.map(response => response.json)
 }
 
-const Change = () => {
-    
-    let wht = document.getElementById("change")
-    
-    wht.innerHTML = <HiOutlineMoon />
-    console.log(wht.innerText)
-}
-
-
-
-export default Change;
-
+export default Themes;

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { HiOutlineSun } from "react-icons/hi";
 import { Link } from 'react-router-dom';
-import Change from './darkMode'
+
 
 
 export default function Navbar() {
@@ -71,7 +71,7 @@ export default function Navbar() {
 
                 <ul className="m-0 p-0">
                     <li style={bsSun}>
-                        <a id="change" onClick={Change} href="#darkmode" className="text-black d-flex fs-5"><HiOutlineSun /></a>
+                        <a id="change" href="#darkmode" className="text-black d-flex fs-5"><HiOutlineSun /></a>
                     </li>
                 </ul>
 
