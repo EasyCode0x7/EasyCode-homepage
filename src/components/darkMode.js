@@ -1,4 +1,4 @@
-
+import { HiOutlineMoon } from "react-icons/hi";
 
 const LightTheme = {
     text: "#23374D",
@@ -20,23 +20,14 @@ const Themes = {
 }
 
 const Change = () => {
-    let sun = document.getElementById("bssun")
-    let moon = document.getElementById("bsmoon")
-
-    sun.addEventListener('click', () => {
-        let s = document.getElementById("bg")
-        s.setAttribute("style", "background-color: black")
-    })
-    moon.addEventListener('click', () => {
-        alert("Moon: Dark mode")
-    })
+    
+    let wht = document.getElementById("change")
+    
+    wht.innerHTML = <HiOutlineMoon />
+    console.log(wht.innerText)
 }
 
 
 
 export default Change;
-<div className='gap-4 py-3 d-flex' style={styleSize}>
-<a href={Twitter}><i class="fa-brands fa-twitter twitter"></i></a>
-<a href={Linkedin}><i class="fa-brands fa-linkedin linkedin"></i></a>
-<a href={YTChannel}><i class="fa-brands fa-youtube youtube"></i></a>
-</div>
+

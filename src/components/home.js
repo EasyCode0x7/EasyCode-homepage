@@ -30,7 +30,7 @@ const Home = () => {
 
         <div>
 
-            <div style={{paddingTop: "60px"}}>
+            <div style={{paddingTop: "200px"}}>
 
                 <div className='fs22 d-flex justify-content-between rounded'>
                     <span className="ps-5">
@@ -51,7 +51,7 @@ const Home = () => {
                                     d="M19.212,17.136C19.212,17.136 12.651,19.306 12.84,25.174C12.888,28.022 10.569,28.548 11.073,32.567C11.727,34.322 12.649,36.92 15.89,36.85C19.131,36.781 19.603,34.354 23.377,32.97C27.151,31.586 31.009,33.828 33.802,31.213C36.596,28.598 35.188,24.468 31.876,22.731C28.564,20.995 24.793,16.327 19.212,17.136Z"></path>
                         </svg>
                     </span>
-                    Hi, I'm an inspired front-end developer based in Spain!
+                    Hi, I'm a Front-End developer based in Spain!
                     <span className="pe-5">
                         <svg 
                             width="15" 
@@ -129,7 +129,7 @@ const Home = () => {
                 <div className='pt-4'>
                     <h2 className='underline fnt-heading'>More</h2>
                     <div className='d-flex'>
-                        <h5>Archinstall</h5>
+                        <h5>Knowledge</h5>
                         <p className='down'>
                         Tool that automatically installs all the dependencies and utilities 
                         necessary to configure a custom development integer.
@@ -138,7 +138,7 @@ const Home = () => {
                 </div>
 
                 <div className='pt-4'>
-                    <h2 className='underline fnt-heading'>On the web</h2>
+                    <h2 className='underline fnt-heading'>Social N-</h2>
                     <ul className='l15t5e7o' style={socialM}>
 
                         <li href={Github}>

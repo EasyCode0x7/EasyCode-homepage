@@ -1,11 +1,42 @@
 import React, { Component } from "react";
-import { FaUssunnah } from "react-icons/fa";
+import { HiOutlineSun } from "react-icons/hi";
 import { Link } from 'react-router-dom';
+import Change from './darkMode'
 
 
-const Navbar = () => {
+export default function Navbar() {
 
     const Github = "https://github.com/EasyCode0x7/EasyCode-homepage";
+
+    const navPrincipal = {
+        display: "flex",
+        position: "fixed",
+        background: "#20202380",
+        backdropFilter: "blur(15px)",
+        padding: "15px",
+        left: "0",
+        width: "100%",
+        justifyContent: "center"
+    }
+
+    const ulContainer = {
+        display: "flex",
+        alignItems: "center",
+        fontSize: "1.05em",
+        margin: "0",
+        padding: "0",
+        position: "relative",
+    }
+
+    const bsSun = {
+        background: "rgba(251, 211, 141, 1)",
+        borderRadius: "5px",
+        width: "40px",
+        height: "35px",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center"
+    }
 
 
     return (
@@ -13,33 +44,40 @@ const Navbar = () => {
 
             <nav 
                 path="/"
-                className='principal-nav rounded'>
+                className='rounded'
+                style={navPrincipal}>
 
-                <ul class="gap-3 d-flex m-0 p-0" style={{fontSize: "1.05em"}}>
+                <ul className="gap-3" style={ulContainer}>
 
                     <li>
                         <Link to="/" className="ssS fw-bold fnt-heading">DevelopedbyDe</Link>
                     </li>
-                    <li class="hfs">
-                        <Link to="/works" class="nav-link text-white">Works</Link>
-                    </li>
-                    <li class="hfs">
-                        <Link to="/posts" class="nav-link text-white">Posts</Link>
-                    </li>
-                    <li class=" hfs">
-                        <a href={Github} class="nav-link text-white"> <i class="fa-brands fa-github"></i> Source</a>
+
+                    <li className="hfs" style={{marginLeft: "100px"}}>
+                        <Link to="/works" className="nav-link">Works</Link>
                     </li>
 
-                    <li class="rounded list-group-item-danger">
-                        <a class="text-black" href="/resume"><FaUssunnah /></a>
+                    <li className="hfs mx-3">
+                        <Link to="/posts" className="nav-link">Posts</Link>
+                    </li>
+
+                    <li className=" hfs">
+                        <a href={Github} className="nav-link"> <i className="fa-brands fa-github"></i> Source</a>
                     </li>
 
                 </ul>
+
+                <div style={{width: "350px"}}></div>
+
+                <ul className="m-0 p-0">
+                    <li style={bsSun}>
+                        <a id="change" onClick={Change} href="#darkmode" className="text-black d-flex fs-5"><HiOutlineSun /></a>
+                    </li>
+                </ul>
+
 
             </nav>
         </div>
     )
 }
-
-export default Navbar;
 
