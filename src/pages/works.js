@@ -7,35 +7,45 @@ import inkdrop2 from '../images/inkdro2.png';
 
 const Works = () => {
 
-
-    const dev = {
-        width: "100%",
-        height: "80%",
-        borderRadius: "20px",
-    }
-
-
     return (
         <div style={{paddingTop: "120px"}}>
             <h3 className="fnt-heading">Works</h3>
 
-            <div className='text-center dev'>
+            <section className='text-center d-flex gap-3'>
 
-                <div>
+                <div className='w-100'>
+                    <img className="rounded w-100 pb-2" src={inkdrop}/>
                     <span>
-                        <img style={dev} src={inkdrop}/>
-                        daf
+                       work 1
                     </span>
                 </div>
 
-                <div>
+                <div className='w-100'>
+                    <img className="rounded w-100 pb-2" src={inkdrop2}/>
                     <span>
-                        <img style={dev} src={inkdrop2}/>
-                        asf
+                       work 2
                     </span>
                 </div>
                 
-            </div>
+            </section>
+
+            <section className='text-center d-flex gap-3 pt-4'>
+
+                <div className='w-100'>
+                    <img className="rounded w-100 pb-2" src={inkdrop}/>
+                    <span>
+                       work 3
+                    </span>
+                </div>
+
+                <div className='w-100'>
+                    <img className="rounded w-100 pb-2" src={inkdrop2}/>
+                    <span>
+                       work 4
+                    </span>
+                </div>
+
+            </section>
 
             <hr></hr>
             <h3>New</h3>

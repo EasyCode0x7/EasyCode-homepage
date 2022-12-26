@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+import './components.css';
 import { HiOutlineSun } from "react-icons/hi";
 import { Link } from 'react-router-dom';
+import Change from './setMode';
 
 
 
@@ -8,76 +10,46 @@ export default function Navbar() {
 
     const Github = "https://github.com/EasyCode0x7/EasyCode-homepage";
 
-    const navPrincipal = {
-        display: "flex",
-        position: "fixed",
-        background: "#20202380",
-        backdropFilter: "blur(15px)",
-        padding: "15px",
-        left: "0",
-        width: "100%",
-        justifyContent: "center"
-    }
-
-    const ulContainer = {
-        display: "flex",
-        alignItems: "center",
-        fontSize: "1.05em",
-        margin: "0",
-        padding: "0",
-        position: "relative",
-    }
-
-    const bsSun = {
-        background: "rgba(251, 211, 141, 1)",
-        borderRadius: "5px",
-        width: "40px",
-        height: "35px",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center"
-    }
-
 
     return (
         <div>
 
             <nav 
                 path="/"
-                className='rounded'
-                style={navPrincipal}>
+                className='rounded navPrincipal'>
 
-                <ul className="gap-3" style={ulContainer}>
+                <ul className="gap-3 ulContainer">
 
                     <li>
                         <Link to="/" className="ssS fw-bold fnt-heading">DevelopedbyDe</Link>
                     </li>
 
-                    <li className="hfs" style={{marginLeft: "100px"}}>
+                    <li className="hfs" style={{marginLeft: "90px"}}>
                         <Link to="/works" className="nav-link">Works</Link>
                     </li>
 
-                    <li className="hfs mx-3">
+                    <li className="hfs mx-2">
                         <Link to="/posts" className="nav-link">Posts</Link>
                     </li>
 
-                    <li className=" hfs">
-                        <a href={Github} className="nav-link"> <i className="fa-brands fa-github"></i> Source</a>
+                    <li className="hfs">
+                        <a href={Github} className="nav-link float-left" style={{width: "150%"}}><i className="fa-brands fa-github"></i> Source</a>
                     </li>
 
                 </ul>
 
-                <div style={{width: "350px"}}></div>
+                <section style={{width: "350px"}}></section>
 
-                <ul className="m-0 p-0">
-                    <li style={bsSun}>
-                        <a id="change" href="#darkmode" className="text-black d-flex fs-5"><HiOutlineSun /></a>
+                <ul className="m-0 p-0" style={{cursor: "pointer"}}>
+                    <li className="bsSunMoon">
+                        <a href="#darkmode" className="text-black d-flex fs-5 sunMoon" onClick={Change}><HiOutlineSun /></a>
                     </li>
                 </ul>
-
 
             </nav>
+
         </div>
     )
 }
+
 

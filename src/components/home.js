@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './components.css';
 import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import deved from '../images/dev.jpeg';
 import { Link } from 'react-router-dom';
@@ -19,14 +20,6 @@ const Home = () => {
     const eJPT = "https://verified.elearnsecurity.com/certificates/6b4943a0-26a2-4ce7-8063-aff8e6bda825";
     const javaScript = "https://www.freecodecamp.org/certification/crashoverride0x7/javascript-algorithms-and-data-structures";
 
-    {/* styles */}
-    const bgColor = { backgroundColor: "#CD5C5C" }
-    const mLogo = { width: "110px", height: "110px" }
-    const fFont = { fontSize: "var(--chakra-fontSizes-normal)" }
-    const socialM = { width: "205px", height: "130px", paddingTop: "3px" }
-    const fWeight = { fontWeight: "300" }
-
-
 
     return (
 
@@ -42,12 +35,12 @@ const Home = () => {
 
                 <div className='text-start h2-text pt-3 d-flex justify-content-between'>
                     <h2 className='fw-bold fnt-heading name-fnt'>Juan Alberto<p className="pt-2 sub-name">Digital Craftsman (/ Developer / Pentester /)</p></h2>
-                    <img className='rounded-circle' style={mLogo} src={deved} />
+                    <img className='rounded-circle mLogo' src={deved} />
                 </div>
 
                 <div>
                     <hr></hr>
-                    <p className='text-start' style={fFont}>
+                    <p className='text-start fFont'>
                         Freelancer providing services for programming and ethical hacking needs.
                         Join me down below and let's get cracking!
                         Happy hacking!. Website inspired in <a 
@@ -74,17 +67,17 @@ const Home = () => {
                 </div>
 
                 <div className="py-4 d-flex">
-                    <Link to='/works' className="btn mx-auto" style={bgColor}>My portfolio</Link>
+                    <Link to='/works' className="btn mx-auto bgColor">My portfolio</Link>
                 </div>
 
                 <div className='pt-4'>
                     <h2 className='underline fnt-heading'>Bio</h2>
                     <div className='d-flex'>
-                        <h5 style={fWeight}>2001</h5>
+                        <h5 className='fWeight'>2001</h5>
                         <p className='down'>Born in Barahona ( בראהונה ), Dominican Rep.</p>
                     </div>
                     <div className='d-flex'>
-                        <h5 style={fWeight}>2022</h5>
+                        <h5 className='fWeight'>2022</h5>
                         <p className='down'>I completed my professional training in two Schools called, eLearnSecurity, 
                             in which I was certified as <a href={eJPT} className="styleTextColor">eJPT</a>, and the other called
                              FreeCodeCamp, in which I was certified in <a href={javaScript} className="styleTextColor">Javascript Algorithms and Data Structures</a> and Reactjs.</p>
@@ -92,33 +85,33 @@ const Home = () => {
                 </div>
 
                 <div className='pt-4'>
-                    <h2 className='underline fnt-heading'>More</h2>
+                    <h2 className='underline fnt-heading'>Brain</h2>
                     <div className='d-flex'>
-                        <h5 style={fWeight}>Knowledge</h5>
+                        <h5 className='fWeight'>Knowledge</h5>
                         <p className='down'>
-                        Tool that automatically installs all the dependencies and utilities 
-                        necessary to configure a custom development integer.
+                            Tool that automatically installs all the dependencies and utilities 
+                            necessary to configure a custom development integer.
                         </p>
                     </div>
                 </div>
 
                 <div className='pt-4'>
                     <h2 className='underline fnt-heading'>Social N-</h2>
-                    <ul className='l15t5e7o' style={socialM}>
+                    <ul className='l15t5e7o socialM'>
 
                         <li href={Github}>
                             <a className='rounded social d-flex' href={Github}>
-                            <h5 style={fWeight}>Github</h5><span className='d-flex align-items-center'><FaGithub/> @EasyCode0x7</span>
+                                <span className='d-flex align-items-center'><FaGithub/> @EasyCode0x7</span>
                             </a>
                         </li>
                         <li>
-                        <a className='rounded social d-flex' href={Twitter}>
-                        <h5 style={fWeight}>Twitter</h5><span className='d-flex align-items-center'><FaTwitter /> @EasyCode0x7</span>
+                            <a className='rounded social d-flex' href={Twitter}>
+                                <span className='d-flex align-items-center'><FaTwitter /> @EasyCode0x7</span>
                             </a>
                         </li>
                         <li>
                             <a className='rounded social d-flex' href={Linkedin}>
-                            <h5 style={fWeight}>Linkedin</h5><span className='d-flex align-items-center'><FaLinkedin /> @EasyCode0x7</span>
+                                <span className='d-flex align-items-center'><FaLinkedin /> @EasyCode0x7</span>
                             </a>
                         </li>
                     </ul>
@@ -127,7 +120,7 @@ const Home = () => {
             </div>
 
             <div className="py-4 d-flex">
-                <Link to='/posts' className="btn mx-auto" style={bgColor}>Popular posts</Link>
+                <Link to='/posts' className="btn mx-auto bgColor">Popular posts</Link>
             </div>
 
         </div>
