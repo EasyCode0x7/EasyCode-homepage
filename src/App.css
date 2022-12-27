@@ -1,7 +1,4 @@
 :root {
-    --twitter: #55acee;
-    --linkedin: #0077B5;
-    --youtube: #bd081c;
     --chakra-fonts-heading: 'M PLUS Rounded 1c';
     --chakra-fonts-body: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     --chakra-fonts-mono: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
@@ -12,17 +9,20 @@
     --cyan: #6DCFE8;
 }
 
+
 #bg, body {
     color: var(--color-personate)!important;
     background: #202023!important;
     font-family: var(--chakra-fonts-body);
 }
 
+
 @media (min-width: 390px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         max-width: 700px!important;
     }
 }
+
 
 @media screen and (max-width: 370px) {
     .fs22 {
@@ -34,92 +34,4 @@
         display: flex!important;
     }
 }
-
-.name-fnt{
-    font-size: var(--chakra-fontSizes-4xl);
-}
-
-
-.social {
-    width: 100%;
-    height: 40px;
-    text-decoration: none;
-    color: rgba(205, 92, 92, 1);
-    justify-content: center;
-}
-
-
-.social:hover {
-    text-decoration: underline;
-    color: rgba(205, 92, 92, 1);
-    background: rgba(129, 230, 217, 0.12);
-}
-
-
-.styleTextColor {
-    color: var(--cyan);
-    text-decoration: none;
-}
-
-
-.styleTextColor:hover {
-    text-decoration: underline;
-    color: var(--cyan);
-}
-
-.fnt-heading {
-    font-family: var(--chakra-fonts-heading);
-}
-
-
-.hfs:hover {
-    text-decoration: underline;
-}
-
-
-.fs22{
-    background-color: rgba(255, 255, 255, 0.08);
-    padding-bottom: 0.6rem;
-    padding-top: 0.6rem;
-}
-
-.ssS, .h2-text {
-    text-decoration: none;
-    color: var(--color-personate)!important;
-}
-
-.ssS, .fnt-norma, .css-15t5e7o, .l15t5e7o, .down {
-    font-size: var(--chakra-fontSizes-normal);
-}
-
-.sub-name {
-    font-weight: 200!important;
-    font-size: .40em;
-}
-
-.css-15t5e7o {
-    text-align: justify;
-}
-
-.down {
-    padding-left: 1.2em;
-    text-align: justify;
-}
-
-.l15t5e7o {
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.css-15t5e7o, .l15t5e7o {
-    text-indent: 1em;
-}
-
-.underline {
-    font-size: var(--cont-size);
-    padding-bottom: 5px;
-    text-decoration: overline;
-    text-decoration-color: gray;
-}
-
 

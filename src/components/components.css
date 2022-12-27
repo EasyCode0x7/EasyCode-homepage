@@ -21,11 +21,11 @@
     display: flex;
     position: fixed;
     background: #20202380;
-    backdrop-filter: blur(15px);
-    padding: 15px;
+    backdrop-filter: blur(5px);
     left: 0;
     width: 100%;
-    justify-content: center
+    justify-content: center;
+    height: 50px;
 }
 
 
@@ -47,7 +47,7 @@
 }
 
 .socialM {
-    width: 105px;
+    width: 395px;
     height: 130px;
     padding-top: 3px;
 }
@@ -55,4 +55,93 @@
 .fWeight {
     font-weight: 300;
 }
+
+.underline {
+    font-size: var(--cont-size);
+    padding-bottom: 5px;
+    text-decoration: overline;
+    text-decoration-color: gray;
+}
+
+.down {
+    padding-left: 1.1em;
+    text-align: justify;
+    font-size: var(--chakra-fontSizes-normal);
+}
+
+.css-15t5e7o, .l15t5e7o {
+    text-indent: 1em;
+    font-size: var(--chakra-fontSizes-normal);
+}
+
+.css-15t5e7o {
+    text-align: justify;
+}
+
+.init {
+    padding: 10px;
+    color: var(--cyan);
+}
+
+.sub-name {
+    font-weight: 200!important;
+    font-size: .40em;
+}
+
+.social {
+    width: 100%;
+    height: 40px;
+    text-decoration: none;
+    color: rgba(205, 92, 92, 1);
+    justify-content: center;
+}
+
+
+.init:hover {
+  background: rgba(129, 230, 217, 0.12);
+  border-radius: 10px;
+  text-decoration: underline;
+}
+
+.styleTextColor {
+    color: var(--cyan);
+    text-decoration: none;
+}
+
+
+.styleTextColor:hover {
+    text-decoration: underline;
+    color: var(--cyan);
+}
+
+.fnt-heading {
+    font-family: var(--chakra-fonts-heading);
+}
+
+.name-fnt{
+    font-size: var(--chakra-fontSizes-4xl);
+}
+
+
+
+.hfs:hover {
+    text-decoration: underline;
+}
+
+
+.fs22{
+    background-color: rgba(255, 255, 255, 0.08);
+    padding-bottom: 0.6rem;
+    padding-top: 0.6rem;
+}
+
+.ssS, .h2-text {
+    text-decoration: none;
+    color: var(--color-personate)!important;
+}
+
+.ssS, .fnt-norma {
+    font-size: var(--chakra-fontSizes-normal);
+}
+
 

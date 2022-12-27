@@ -40,7 +40,7 @@ export default function Navbar() {
 
                 <section style={{width: "350px"}}></section>
 
-                <ul className="m-0 p-0" style={{cursor: "pointer"}}>
+                <ul className="m-0 p-0 d-flex align-items-center" style={{cursor: "pointer"}}>
                     <li className="bsSunMoon">
                         <a href="#darkmode" className="text-black d-flex fs-5 sunMoon" onClick={Change}><HiOutlineSun /></a>
                     </li>

@@ -21,6 +21,7 @@ const Home = () => {
     const javaScript = "https://www.freecodecamp.org/certification/crashoverride0x7/javascript-algorithms-and-data-structures";
 
 
+
     return (
 
         <div>
@@ -54,7 +55,7 @@ const Home = () => {
             <div>
 
                 <div  className='pt-5'>
-                    <h2  className='underline fnt-heading'>Work</h2>
+                    <h2  className='underline fw-bold fnt-heading'>Work</h2>
                     <p className='css-15t5e7o'>
                         Juan is an independent Front-End Developer based in Spain with a passion for creating digital
                         services/things he wants. He has a knack for everything related to product launches, from planning and
@@ -71,7 +72,7 @@ const Home = () => {
                 </div>
 
                 <div className='pt-4'>
-                    <h2 className='underline fnt-heading'>Bio</h2>
+                    <h2 className='underline fw-bold fnt-heading'>Bio</h2>
                     <div className='d-flex'>
                         <h5 className='fWeight'>2001</h5>
                         <p className='down'>Born in Barahona ( בראהונה ), Dominican Rep.</p>
@@ -85,7 +86,7 @@ const Home = () => {
                 </div>
 
                 <div className='pt-4'>
-                    <h2 className='underline fnt-heading'>Brain</h2>
+                    <h2 className='underline fw-bold fnt-heading'>Brain</h2>
                     <div className='d-flex'>
                         <h5 className='fWeight'>Knowledge</h5>
                         <p className='down'>
@@ -96,22 +97,22 @@ const Home = () => {
                 </div>
 
                 <div className='pt-4'>
-                    <h2 className='underline fnt-heading'>Social N-</h2>
+                    <h2 className='underline fw-bold fnt-heading'>Social N-</h2>
                     <ul className='l15t5e7o socialM'>
 
-                        <li href={Github}>
+                        <li style={{width: "55%"}}>
                             <a className='rounded social d-flex' href={Github}>
-                                <span className='d-flex align-items-center'><FaGithub/> @EasyCode0x7</span>
+                                <span className='d-flex init align-items-center'><FaGithub/> @EasyCode0x7</span>
                             </a>
                         </li>
-                        <li>
+                        <li style={{width: "55%"}}>
                             <a className='rounded social d-flex' href={Twitter}>
-                                <span className='d-flex align-items-center'><FaTwitter /> @EasyCode0x7</span>
+                                <span className='d-flex init align-items-center'><FaTwitter /> @EasyCode0x7</span>
                             </a>
                         </li>
-                        <li>
+                        <li style={{width: "55%"}}>
                             <a className='rounded social d-flex' href={Linkedin}>
-                                <span className='d-flex align-items-center'><FaLinkedin /> @EasyCode0x7</span>
+                                <span className='d-flex init align-items-center'><FaLinkedin /> @EasyCode0x7</span>
                             </a>
                         </li>
                     </ul>
