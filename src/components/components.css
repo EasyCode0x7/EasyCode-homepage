@@ -1,3 +1,15 @@
+@media screen and (max-width: 370px) {
+    .fs22 {
+        display: none!important;
+        justify-content: none!important;
+    }
+    .fs22 img {
+        margin: auto!important;
+        display: flex!important;
+    }
+}
+
+
 .ulContainer{
     display: flex;
     align-items: center;

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Quotes from './quote';
 import './components.css';
 import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import deved from '../images/dev.jpeg';
@@ -28,6 +29,11 @@ const Home = () => {
 
             <div style={{paddingTop: "200px"}}>
 
+      {/*                <div>
+                  <a href='#' id='clave'>Pres here!</a>
+                  <section><Quotes /></section>
+                </div>
+*/}
                 <div className='fs22 d-flex justify-content-center rounded'>
 
                     Hi, I'm a Front-End developer based in Spain!

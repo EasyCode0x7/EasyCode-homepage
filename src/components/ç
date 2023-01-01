@@ -1,0 +1,18 @@
+
+
+
+let api = "https://www.neutrinoapi.com/apis.json";
+
+fetch(api)
+.then(res => res.json()).then( (response = [response].apis) => { 
+    [response].map(respons => {
+        try {
+          Object.keys(respons).forEach(key => console.log(key, ':', obj[key]))
+        } catch {
+
+            console.error("There was an error")
+        }
+    });
+});
+
+
