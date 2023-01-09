@@ -33,7 +33,7 @@
     display: flex;
     position: fixed;
     background: #20202380;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);
     left: 0;
     width: 100%;
     justify-content: center;
@@ -92,7 +92,7 @@
 
 .init {
     padding: 10px;
-    color: var(--cyan);
+    color: white;
 }
 
 .sub-name {
@@ -110,20 +110,20 @@
 
 
 .init:hover {
-  background: rgba(129, 230, 217, 0.12);
+  background: var(--cyan);
   border-radius: 10px;
   text-decoration: underline;
 }
 
 .styleTextColor {
-    color: var(--cyan);
+    color: var(--yellow);
     text-decoration: none;
 }
 
 
 .styleTextColor:hover {
     text-decoration: underline;
-    color: var(--cyan);
+    color: var(--yellow);
 }
 
 .fnt-heading {
@@ -156,4 +156,6 @@
     font-size: var(--chakra-fontSizes-normal);
 }
 
-
+.text-in {
+    text-indent: 25px;
+}

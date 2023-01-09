@@ -12,7 +12,7 @@ const Home = () => {
 
 
     const Twitter = "https://twitter.com/EasyCode0x7";
-    const Linkedin = "https://linkedin.com/";
+    const Linkedin = "https://www.linkedin.com/in/juan-alberto-r-santana-aka-hello-world-828a6424b/";
     const YTChannel = "https://youtube.com/@EasyCode_";
     const Github = "https://github.com/EasyCode0x7";
 
@@ -20,7 +20,6 @@ const Home = () => {
     const Tm = "https://www.craftz.dog/";
     const eJPT = "https://verified.elearnsecurity.com/certificates/6b4943a0-26a2-4ce7-8063-aff8e6bda825";
     const javaScript = "https://www.freecodecamp.org/certification/crashoverride0x7/javascript-algorithms-and-data-structures";
-
 
 
     return (
@@ -74,7 +73,7 @@ const Home = () => {
                 </div>
 
                 <div className="py-4 d-flex">
-                    <Link to='/works' className="btn mx-auto bgColor">My portfolio</Link>
+                    <Link to='/works' className="btn mx-auto btn-info">My portfolio</Link>
                 </div>
 
                 <div className='pt-4'>
@@ -97,7 +96,22 @@ const Home = () => {
                         <h5 className='fWeight'>Knowledge</h5>
                         <p className='down'>
                             Tool that automatically installs all the dependencies and utilities 
-                            necessary to configure a custom development integer.
+                            necessary to configure a custom development integer.\n
+                            
+                            <div className='pt-5 px-2 rounded' style={{background: "#282c34!important;"}}>
+
+                                <p>const Technologies = [</p>
+                                <ol>
+                                    <li className='text-in'>html: "Html5 && Css3",</li>
+                                    <li className='text-in'>javascript: "Javascript",</li>
+                                    <li className='text-in'>react: "ReactJS",</li>
+                                    <li className='text-in'>python: "Python",</li>
+                                    <li className='text-in'>boostrap: "Boostrap",</li>
+                                    <li className='text-in'>tailwindcss: "TailwindCss"</li>
+                                </ol>
+                                <p>]</p>
+
+                            </div>
                         </p>
                     </div>
                 </div>
@@ -127,7 +141,7 @@ const Home = () => {
             </div>
 
             <div className="py-4 d-flex">
-                <Link to='/posts' className="btn mx-auto bgColor">Popular posts</Link>
+                <Link to='/posts' className="btn mx-auto btn-info">Popular posts</Link>
             </div>
 
         </div>
