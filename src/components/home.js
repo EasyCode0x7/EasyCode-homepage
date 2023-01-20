@@ -33,7 +33,7 @@ const Home = () => {
                   <section><Quotes /></section>
                 </div>
 */}
-                <div className='fs22 d-flex justify-content-center rounded'>
+                <div className='fs22 d-flex justify-content-center'>
 
                     Hi, I'm a Front-End developer based in Spain!
 
@@ -73,7 +73,7 @@ const Home = () => {
                 </div>
 
                 <div className="py-4 d-flex">
-                    <Link to='/works' className="btn mx-auto btn-info">My portfolio</Link>
+                    <Link to='/works' className="btn mx-auto btn-info fwt-bold">My portfolio</Link>
                 </div>
 
                 <div className='pt-4'>
@@ -98,10 +98,10 @@ const Home = () => {
                             Tool that automatically installs all the dependencies and utilities 
                             necessary to configure a custom development integer.\n
                             
-                            <div className='pt-5 px-2 rounded' style={{background: "#282c34!important;"}}>
+                            <div className='pt-5 px-2 style-1-bg' style={{background: "#282c34!important;"}}>
 
                                 <p>const Technologies = [</p>
-                                <ol>
+                                <ol className='text-in'>
                                     <li className='text-in'>html: "Html5 && Css3",</li>
                                     <li className='text-in'>javascript: "Javascript",</li>
                                     <li className='text-in'>react: "ReactJS",</li>
@@ -122,17 +122,17 @@ const Home = () => {
 
                         <li style={{width: "55%"}}>
                             <a className='rounded social d-flex' href={Github}>
-                                <span className='d-flex init align-items-center'><FaGithub/> @EasyCode0x7</span>
+                                <span className='d-flex init align-items-center'><FaGithub/> EasyCode0x7</span>
                             </a>
                         </li>
                         <li style={{width: "55%"}}>
                             <a className='rounded social d-flex' href={Twitter}>
-                                <span className='d-flex init align-items-center'><FaTwitter /> @EasyCode0x7</span>
+                                <span className='d-flex init align-items-center'><FaTwitter /> EasyCode0x7</span>
                             </a>
                         </li>
                         <li style={{width: "55%"}}>
                             <a className='rounded social d-flex' href={Linkedin}>
-                                <span className='d-flex init align-items-center'><FaLinkedin /> @EasyCode0x7</span>
+                                <span className='d-flex init align-items-center'><FaLinkedin /> EasyCode0x7</span>
                             </a>
                         </li>
                     </ul>

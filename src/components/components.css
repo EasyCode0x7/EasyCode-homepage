@@ -145,6 +145,7 @@
     background-color: rgba(255, 255, 255, 0.08);
     padding-bottom: 0.6rem;
     padding-top: 0.6rem;
+    border-radius: 10px;
 }
 
 .ssS, .h2-text {
@@ -157,5 +158,18 @@
 }
 
 .text-in {
-    text-indent: 25px;
+    list-style: none;
+    color: yellow;
+}
+
+.style-1-bg {
+    background: black;
+    padding-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+.style-1-bg p {
+    color: #9b2226;
 }
