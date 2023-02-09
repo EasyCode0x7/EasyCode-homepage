@@ -100,13 +100,7 @@
     font-size: .40em;
 }
 
-.social {
-    width: 100%;
-    height: 40px;
-    text-decoration: none;
-    color: rgba(205, 92, 92, 1);
-    justify-content: center;
-}
+
 
 
 .init:hover {
@@ -163,7 +157,7 @@
 }
 
 .style-1-bg {
-    background: black;
+    background: #212529;
     padding-bottom: 15px;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -172,4 +166,12 @@
 
 .style-1-bg p {
     color: #9b2226;
+}
+
+.social {
+    width: 100%;
+    height: 40px;
+    text-decoration: none;
+    color: rgba(205, 92, 92, 1);
+    justify-content: center;
 }

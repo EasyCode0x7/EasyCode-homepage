@@ -73,7 +73,7 @@ const Home = () => {
                 </div>
 
                 <div className="py-4 d-flex">
-                    <Link to='/works' className="btn mx-auto btn-info fwt-bold">My portfolio</Link>
+                    <Link to='/works' className="btn mx-auto btn-info fw-bolder">My portfolio</Link>
                 </div>
 
                 <div className='pt-4'>
@@ -96,23 +96,21 @@ const Home = () => {
                         <h5 className='fWeight'>Knowledge</h5>
                         <p className='down'>
                             Tool that automatically installs all the dependencies and utilities 
-                            necessary to configure a custom development integer.\n
+                            necessary to configure a custom development integer.</p>
                             
-                            <div className='pt-5 px-2 style-1-bg' style={{background: "#282c34!important;"}}>
+	                    <div className='pt-5 px-2 style-1-bg' style={{background: "#282c34!important;"}}>
+                            <p>const Technologies = [</p>
+                            <ol className='text-in'>
+                                <li className='text-in'>HTML: "Html5 && Css3",</li>
+					            <li className='text-in'>javascript: "Javascript",</li>
+                                <li className='text-in'>react: "ReactJS",</li>
+                                <li className='text-in'>python: "Python",</li>
+                                <li className='text-in'>boostrap: "Boostrap",</li>
+                                <li className='text-in'>tailwindcss: "TailwindCss"</li>
+                        	</ol>
+                            <p>]</p>
 
-                                <p>const Technologies = [</p>
-                                <ol className='text-in'>
-                                    <li className='text-in'>html: "Html5 && Css3",</li>
-                                    <li className='text-in'>javascript: "Javascript",</li>
-                                    <li className='text-in'>react: "ReactJS",</li>
-                                    <li className='text-in'>python: "Python",</li>
-                                    <li className='text-in'>boostrap: "Boostrap",</li>
-                                    <li className='text-in'>tailwindcss: "TailwindCss"</li>
-                                </ol>
-                                <p>]</p>
-
-                            </div>
-                        </p>
+                        </div>
                     </div>
                 </div>
 
@@ -120,17 +118,17 @@ const Home = () => {
                     <h2 className='underline fw-bold fnt-heading'>Social N-</h2>
                     <ul className='l15t5e7o socialM'>
 
-                        <li style={{width: "55%"}}>
+                        <li className='w-50'>
                             <a className='rounded social d-flex' href={Github}>
                                 <span className='d-flex init align-items-center'><FaGithub/> EasyCode0x7</span>
                             </a>
                         </li>
-                        <li style={{width: "55%"}}>
+                        <li className='w-50'>
                             <a className='rounded social d-flex' href={Twitter}>
                                 <span className='d-flex init align-items-center'><FaTwitter /> EasyCode0x7</span>
                             </a>
                         </li>
-                        <li style={{width: "55%"}}>
+                        <li className='w-50'>
                             <a className='rounded social d-flex' href={Linkedin}>
                                 <span className='d-flex init align-items-center'><FaLinkedin /> EasyCode0x7</span>
                             </a>
@@ -141,7 +139,7 @@ const Home = () => {
             </div>
 
             <div className="py-4 d-flex">
-                <Link to='/posts' className="btn mx-auto btn-info">Popular posts</Link>
+                <Link to='/posts' className="btn mx-auto btn-info fw-bolder">Popular posts</Link>
             </div>
 
         </div>
